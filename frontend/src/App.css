@@ -1,0 +1,7 @@
+.navbar {
+  width: calc(100vw - 15rem);
+}
+
+.dashboard-width {
+  width: calc(100vw - 15rem);
+}
