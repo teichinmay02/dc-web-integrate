@@ -10,6 +10,7 @@ import FFmpeg from "./components/FFmpeg";
 import 'react-toastify/dist/ReactToastify.css';
 import Steghide from "./components/Steghide";
 import Sherloq from "./components/Sherloq";
+import Index from "./pages";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/exiftool' element={<ExifTool />} />
           <Route path='/ffmpeg' element={<FFmpeg />} />
           <Route path='/steghide' element={<Steghide />} />
+          <Route path="/index" element={<Index />} />
           </Routes>
         </Router>
       </div>

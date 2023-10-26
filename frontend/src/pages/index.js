@@ -1,55 +1,15 @@
-<!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+import React from "react";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assests/css/glider.min.css">
-    <link rel="stylesheet" href="assests/css/main.css">
-    <link rel="stylesheet" href="assests/css/styles.css">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-    <script src="https://kit.fontawesome.com/8007348531.js" crossorigin="anonymous"></script>
-    <script src="assests/js/glider.min.js">
-        // Get references to the image and overlay
-        const image = document.getElementById('image');
-        const overlay = document.getElementById('overlay');
-        const imageText = document.getElementById('imageText');
-
-        // Function to toggle the overlay
-        function toggleOverlay() {
-            overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
-        }
-
-        // Add a click event listener to the image
-        image.addEventListener('click', () => {
-            toggleOverlay();
-        });
-
-        // Close the overlay if the user clicks anywhere outside of it
-        overlay.addEventListener('click', (e) => {
-            if (e.target === overlay) {
-                toggleOverlay();
-            }
-        });
-
-        // You can add more content to the overlay as needed
-
-    </script>
-</head>
-
-<body>
-    <header>
+class Index extends React.Component{
+    render(){
+        return(
+        <div>
+           <header>
         <nav class="navbar" style="background-color: rgba(0,0,0,0.7);">
-            <img src="../assests/logo.png" alt="Logo">
+            <img src="../assests/logo.png" alt="Logo" />
             <ul>
                 <li><a href="#about" class="about">About</a>
-                    <!-- <ul class="dropdown">
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Mission</a></li>
-                <li><a href="#">Vision</a></li>
-              </ul> -->
+                    
                 </li>
                 <li><a href="#services">Explore</a>
                     <ul class="dropdown">
@@ -64,9 +24,7 @@
                         <li><a href="#forensics">Forensics</a></li>
                     </ul>
                 </li>
-                <!-- <li><a href="#contact">Contact</a>
-                   
-                </li> -->
+              
             </ul>
             <div class="search">
                 <a href="#" class="button">24x7 Cyber helpline</a>
@@ -89,14 +47,14 @@
                     relentless siege. A new epoch in cybersecurity has dawned – and it's a revolution that defies all expectations. 
                     Welcome to the universe of DeepCytes, the forefront of technological safeguarding against the ceaseless tide of 
                     cyber vulnerabilities.
-                 <br>
+                 <br />
     
                 </p>
                 
             </div>
     
             <div class="count-right">
-                <img src="../assests/count-on-us.svg" alt="Count on us" width="550px" loading="lazy">
+                <img src="../assests/count-on-us.svg" alt="Count on us" width="550px" loading="lazy" />
                
             </div>
     
@@ -108,14 +66,14 @@
             </center>
             <div class="glider">
                 <figure>
-                    <h1 class="serviceName">Image <br>Forensics</h1>
+                    <h1 class="serviceName">Image <br />Forensics</h1>
                     <section class="details">
                         Image forensics involves using tools to determine if a picture has been altered or is real.
                     </section>
                 </figure>
 
                 <figure>
-                    <h1 class="serviceName">Video & Audio <br>Forensics</h1>
+                    <h1 class="serviceName">Video & Audio <br />Forensics</h1>
                     <section class="details">
                         Video and audio forensics involves investigating and analyzing videos and audio recordings to uncover any 
                         tampering, alterations, or authenticity issues, much like digital detective work for audiovisual content.
@@ -123,9 +81,9 @@
                 </figure>
 
                 <figure>
-                    <h1 class="serviceName">Memory <br>Forensics</h1>
+                    <h1 class="serviceName">Memory <br />Forensics</h1>
                     <section class="details" style="margin-top: 50px">
-                        <!-- Added Extra Margin Because Title is Single Word -->
+                      
                        memory forensics info
                     </section>
                 </figure>
@@ -165,61 +123,61 @@
                     <div class="container">
                         <div class="card-container">
                             <figure class="card" id="card1">
-                                <!-- Content of the card -->
-                                <img src="../assests/tools/sherlock.png" alt="Image 2" class="image">
+                               
+                                <img src="../assests/tools/sherlock.png" alt="Image 2" class="image" />
                             </figure>
                             
                             <figure class="card" id="card2">
-                                <!-- Content of the card -->
-                                <img src="../assests/tools/Ghiro.png" alt="Image 2" class="image">
+                             
+                                <img src="../assests/tools/Ghiro.png" alt="Image 2" class="image" />
                             </figure>
                         </div>
                         
                         <div class="card-container">
                             <figure class="card" id="card3">
-                                <!-- Content of the card -->
-                                <img src="../assests/tools/ExifTool.png" alt="Image 2" class="image">
+                             
+                                <img src="../assests/tools/ExifTool.png" alt="Image 2" class="image" />
                             </figure>
                             
                             <figure class="card" id="card4">
-                                <!-- Content of the card -->
+                           
                 
-                                <img src="../assests/tools/Steghide.png" alt="Image 2" class="image">
+                                <img src="../assests/tools/Steghide.png" alt="Image 2" class="image" />
                             </figure>
                         </div>
                         <div class="info-container">
                             <div class="info" id="infoBox1">
-                                <!-- Information for card 1 -->
+                            
                                 <h1>sherloq</h1>
-                                <img src="../assests/load-unscreen.gif" style="width: 300px;">
-                               <br> <h3>Unravel mysteries in digital evidence with this powerful forensic analysis tool.</h3>
+                                <img src="../assests/load-unscreen.gif" style="width: 300px;" />
+                               <br /> <h3>Unravel mysteries in digital evidence with this powerful forensic analysis tool.</h3>
 
                                 <p></p>
                             </div>
                             <div class="info" id="infoBox2">
-                                <!-- Information for card 2 -->
+                        
                                 Ghiro
-                                <br>
-                                <img src="../assests/tools/Ghiro.png" width="300px" height="300px" alt="">
-                                <br>
+                                <br />
+                                <img src="../assests/tools/Ghiro.png" width="300px" height="300px" alt="" />
+                                <br />
                                 Illuminate the hidden details in your images and uncover the truth.
-                                <br><br>
+                                <br /><br />
                                 <a href="#" class="button">Use Tool</a>
                                 <p></p>
                             </div>
                             <div class="info" id="infoBox3">
-                                <!-- Information for card 3 -->
+                               
                                 ExifTool
                                 <p></p>
                             </div>
                             <div class="info" id="infoBox4">
-                                <!-- Information for card 4 -->
+                               
                                 StegHide
-                                <br>
-                                <img src="../assests/tools/Steghide.png" width="300px" height="300px" alt="">
-                                <br>
+                                <br />
+                                <img src="../assests/tools/Steghide.png" width="300px" height="300px" alt="" />
+                                <br />
                                 Discover concealed information by detecting and extracting data hidden within digital media.
-                                <br><br>
+                                <br /><br />
                                 <a href="#" class="button">Use Tool</a>
                                 <p></p>
                             </div>
@@ -241,14 +199,14 @@
                     <div class="ffmpeg_container">
                         <div class="ffmpeg_card-container">
                             <figure class="ffmpeg_card" id="ffmpeg_card">
-                                <!-- Content of the FFmpeg card -->
-                                <img src="../assests/tools/FFmpeg.png" alt="FFmpeg Image" class="image">
+                                
+                                <img src="../assests/tools/FFmpeg.png" alt="FFmpeg Image" class="image" />
                             </figure>
                            
                         </div>
                         <div class="ffmpeg_info-container">
                             <div class="ffmpeg_info" id="ffmpeg_infoBox">
-                                <!-- Information for the FFmpeg card -->
+                                
                                 The Swiss Army knife for multimedia forensics, capable of handling various audio and video formats.
                                 <p></p>
                             </div>
@@ -290,35 +248,28 @@
                     <div class="webvapt_cont">
                         <div class="webvapt_card">
                             <figure class="webvapt_image" id="webvapt_image">
-                                <!-- Content of the FFmpeg card -->
-                                <img src="../assests/tools/WhatWeb.png" alt="FFmpeg Image" class="image">
+                                
+                                <img src="../assests/tools/WhatWeb.png" alt="FFmpeg Image" class="image" />
                             </figure>
                             <figure class="webvapt_image" id="webvapt_image">
-                                <!-- Content of the FFmpeg card -->
-                                <img src="../assests/tools/SQLmap.png" alt="FFmpeg Image" class="image">
+                               
+                                <img src="../assests/tools/SQLmap.png" alt="FFmpeg Image" class="image" />
                             </figure>
                         </div>
                         <div class="webvapt_info_cont">
                             <div class="webvapt_info" id="webvapt_info">
-                                <!-- Information for the FFmpeg card -->
+                                
                                 <p>ffmpeg</p>
                                 <p></p>
                             </div>
                             <div class="webvapt_info" id="webvapt_info">
-                                <!-- Information for the FFmpeg card -->
+                                
                                 <p>ffmpeg</p>
                                 <p></p>
                             </div>
                         </div>
                     </div>
-<!--    
-                    <figure class="web-vapt-icons">
-                        <img src="../assests/tools/WhatWeb.png" width="200px" height="200px" alt="">
-                    </figure>
-                    <figure class="web-vapt-icons">
-                        <img src="../assests/tools/SQLmap.png" width="300px" height="300px"  alt="">
-                    </figure> -->
-                 
+
                     <p style="font-size: 25px;">
                         <font style="color: aqua;">2. Mobile VAPT:</font>
                         <font style="color: white;">
@@ -330,22 +281,22 @@
                     <div class="mobile_vapt_container">
                         <div class="mobile_vapt_card-container">
                             <figure class="mobile_vapt_card" id="mobile_vapt_card5">
-                                <!-- Content of the mobile_vapt card -->
-                                <img src="../assests/tools/MOBsf.png" alt="mobile_vapt Image" class="image">
+                          
+                                <img src="../assests/tools/MOBsf.png" alt="mobile_vapt Image" class="image" />
                             </figure>
                             <figure class="mobile_vapt_card" id="mobile_vapt_card5">
-                                <!-- Content of the mobile_vapt card -->
-                                <img src="../assests/tools/MOBsf.png" alt="mobile_vapt Image" class="image">
+                              
+                                <img src="../assests/tools/MOBsf.png" alt="mobile_vapt Image" class="image" />
                             </figure>
                         </div>
                         <div class="mobile_vapt_info-container">
                             <div class="mobile_vapt_info" id="mobile_vapt_infoBox5">
-                                <!-- Information for the mobile_vapt card -->
+                               
                                
                                 <p></p>
                             </div>
                             <div class="mobile_vapt_info" id="mobile_vapt_infoBox5">
-                                <!-- Information for the mobile_vapt card -->
+                 
                                 
                                 <p></p>
                             </div>
@@ -363,14 +314,14 @@
                     <div class="api_vapt_container">
                         <div class="api_vapt_card-container">
                             <figure class="api_vapt_card" id="api_vapt_card5">
-                                <!-- Content of the api_vapt card -->
-                                <img src="../assests/tools/jest.png" alt="api_vapt Image" class="image">
+                               
+                                <img src="../assests/tools/jest.png" alt="api_vapt Image" class="image" />
                             </figure>
                             
                         </div>
                         <div class="api_vapt_info-container">
                             <div class="api_vapt_info" id="api_vapt_infoBox5">
-                                <!-- Information for the api_vapt card -->
+                              
                                 
                                 <p></p>
                             </div>
@@ -389,15 +340,14 @@
                     <div class="src_code_container">
                         <div class="src_code_card-container">
                             <figure class="src_code_card" id="src_code_card5">
-                                <!-- Content of the src_code card -->
-                                <img src="../assests/tools/jest.png" alt="src_code Image" class="image">
+                
+                                <img src="../assests/tools/jest.png" alt="src_code Image" class="image" />
                             </figure>
                             
                         </div>
                         <div class="src_code_info-container">
                             <div class="src_code_info" id="src_code_infoBox5">
-                                <!-- Information for the src_code card -->
-                               
+                         
                                 <p></p>
                             </div>
                             
@@ -413,7 +363,7 @@
 
         <div id="about" class="video-container" >
             <video width="1300px" height="auto">
-                <source src="../assests/dummy.mp4" type="video/map4" >
+                <source src="../assests/dummy.mp4" type="video/map4"/ >
             </video>
 
             <div class="video-container-caption">
@@ -430,11 +380,11 @@
                                 Welcome to Our Cutting - Edge Cyber Forensics Website.</h2>
                             <p style="font-size: 30px">where we unleash the power of digital investigation to unravel the truth
                                 in a world clouded by deception. </p>
-                            <!-- Added Extra Margin Because Title is Single Word -->
+                            
                             <h5 style="font-size: 20px;"> Our state-of-the-art Cyber Forensics platform harnesses digital
                                 investigation to unveil truths in a world veiled by deception. As a Cyber Intelligence
                                 powerhouse, we proudly present a range of ingenious tools empowering investigators to decipher
-                                enigmas within the digital realm. Our toolkit spans diverse expertise including: <br>
+                                enigmas within the digital realm. Our toolkit spans diverse expertise including: <br />
                                 <ul>
                                     <li>
                                         <font style="color: aqua;">Image Forensics</font> —unveiling subtle manipulations in
@@ -465,16 +415,6 @@
             
 
         </div>
-        <!-- <button class="glider-prev">
-                <i class="uil uil-arrow-circle-left"></i>
-            </button> -->
-       
-
-        <!-- <button class="glider-next">
-                <i class="uil uil-arrow-circle-right"></i>
-            </button> -->
-
-        <!-- <div id="dots" class="glider-dots" role="tablist"></div> -->
        
 
 
@@ -482,7 +422,7 @@
 
             <div class="count-left">
                 <p class="custom-title">YOU CAN COUNT ON US</p>
-                <img src="../assests/count-on-us.svg" alt="Count on us" width="550px" loading="lazy">
+                <img src="../assests/count-on-us.svg" alt="Count on us" width="550px" loading="lazy" />
             </div>
 
             <div class="count-right">
@@ -492,10 +432,10 @@
                     vigilant and proactive in safeguarding your online presence.
                 </p>
                 <p id="contact-us">
-                    Really excited to get in touch with us? <br>
-                    Send us an email at info@deepcytes.io <br>
-                    Or follow us at @deepcytes on Facebook and Instagram <br>
-                    for updates and news. <br>
+                    Really excited to get in touch with us? <br />
+                    Send us an email at info@deepcytes.io <br />
+                    Or follow us at @deepcytes on Facebook and Instagram <br />
+                    for updates and news. <br />
 
                 </p>
             </div>
@@ -519,27 +459,12 @@
 
  <div class="footer-divider"></div>
         <footer class="blue-footer">
-<<<<<<< HEAD
             <div class="icon-container">
-                <a href="#"><img src="icon1.jpeg.jpeg" width="100px" height="100px" alt="Icon 1"></a>
-                <a href="#"><img src="icon2.jpeg.jpeg" alt="Icon 2"></a>
-                <a href="#"><img src="icon3.jpeg.jpeg" alt="Icon 3"></a>
-                <a href="#"><img src="icon4.jpeg.jpeg" alt="Icon 4"></a>
-                <a href="#"><img src="icon5.jpeg.jpeg" alt="Icon 5"></a>
-=======
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="logofooter.png.png" alt="Logo" class="logo">
-                </div>
-                <div class="icon-container">
-                    <a href="#"><img src="icon1.jpeg.jpeg" alt="Icon 1"></a>
-                    <a href="#"><img src="icon2.jpeg.jpeg" alt="Icon 2"></a>
-                    <a href="#"><img src="icon3.jpeg.jpeg" alt="Icon 3"></a>
-                    <a href="#"><img src="icon4.jpeg.jpeg" alt="Icon 4"></a>
-                    <a href="#"><img src="icon5.jpeg.jpeg" alt="Icon 5"></a>
-                </div>
-               
->>>>>>> 5eb78c5b7c6b2756ddbab4daea8e114eb6f861f4
+                <a href="#"><img src="icon1.jpeg.jpeg" width="100px" height="100px" alt="Icon 1" /></a>
+                <a href="#"><img src="icon2.jpeg.jpeg" alt="Icon 2" /></a>
+                <a href="#"><img src="icon3.jpeg.jpeg" alt="Icon 3" /></a>
+                <a href="#"><img src="icon4.jpeg.jpeg" alt="Icon 4" /></a>
+                <a href="#"><img src="icon5.jpeg.jpeg" alt="Icon 5" /></a>
             </div>
         </footer>
        
@@ -553,190 +478,10 @@
     </div>
    
 
-    <script src="js/glider.min.js"></script>
-    <script>
-        new Glider(document.querySelector('.glider'),
-            {
-                // Mobile-first defaults
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                scrollLock: true,
-                draggable: true,
-                dots: '#dots',
-                arrows: {
-                    prev: '.glider-prev',
-                    next: '.glider-next'
-                },
-                responsive:
-                    [
-                        {
-                            // screens greater than >= 775px
-                            breakpoint: 600,
-                            settings: {
-                                // Set to `auto` and provide item width to adjust to viewport
-                                slidesToShow: '1.5',
-                                slidesToScroll: 'auto',
-                                draggable: true,
-                                itemWidth: 150,
-                                duration: 0.25
-                            }
-                        },
-                        {
-                            // screens greater than >= 1024px
-                            breakpoint: 1024,
-                            settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 1,
-                                draggable: true,
-                                itemWidth: 150,
-                                duration: 0.25
-                            }
-                        }
-                    ]
-            });
-        // JavaScript
-        const cards = document.querySelectorAll('.card');
-        const infoBoxes = document.querySelectorAll(".info");
-
-        cards.forEach((card, index) => {
-            card.addEventListener("click", () => {
-                // Hide all info boxes
-                infoBoxes.forEach((infoBox) => {
-                    infoBox.style.display = "none";
-                });
-
-                // Move all cards to the extreme left
-                cards.forEach((c) => {
-                    c.style.transform = "translateX(-400px)";
-                });
-
-                // Display the message for the clicked card in the corresponding info box
-                const message = card.getAttribute("data-message");
-                infoBoxes[index].style.transform = "translateX(0)";
-                infoBoxes[index].querySelector("p").textContent = message;
-                infoBoxes[index].style.display = "block";
-            });
-        });
-        
-
-        const ffmpeg_cards = document.querySelectorAll('.ffmpeg_card');
-        const ffmpeg_infoBoxes = document.querySelectorAll('.ffmpeg_info');
-
-        ffmpeg_cards.forEach((ffmpeg_card, ffmpeg_index) => {
-            ffmpeg_card.addEventListener('click', () => {
-                // Hide all FFmpeg info boxes
-                ffmpeg_infoBoxes.forEach((ffmpeg_infoBox) => {
-                    ffmpeg_infoBox.style.display = 'none';
-                });
-
-                // Move all FFmpeg cards to the extreme left
-                ffmpeg_cards.forEach((c) => {
-                    c.style.transform = 'translateX(-400px)';
-                });
-
-                // Display the FFmpeg info box for the clicked card
-                const message = ffmpeg_card.getAttribute("data-message")
-                ffmpeg_infoBoxes[ffmpeg_index].style.transform = 'translateX(0)';
-                ffmpeg_infoBoxes[ffmpeg_index].querySelector("p").textContent = message;
-                ffmpeg_infoBoxes[ffmpeg_index].style.display = 'block';
-            });
-        });
-
-        const webvapt_cards = document.querySelectorAll('.webvapt_image');
-        const webvapt_info = document.querySelectorAll('.webvapt_info');
-
-        webvapt_cards.forEach((webvapt_card, webvapt_index) => {
-            webvapt_card.addEventListener('click', () => {
-                // Hide all webvapt info boxes
-                webvapt_info.forEach((webvapt_info) => {
-                    webvapt_info.style.display = 'none';
-                });
-
-                // Move all webvapt cards to the extreme left
-                webvapt_cards.forEach((c) => {
-                    c.style.transform = 'translateX(-400px)';
-                });
-
-                // Display the webvapt info box for the clicked card
-                const message = ffmpeg_card.getAttribute("data-message")
-                webvapt_info[webvapt_index].querySelector("p").textContent = message;
-                webvapt_info[webvapt_index].style.transform = 'translateX(0)';
-                webvapt_info[webvapt_index].style.display = 'block';
-            });
-        });
-
-        const mobile_vapt_cards = document.querySelectorAll('.mobile_vapt_card');
-        const mobile_vapt_infoBoxes = document.querySelectorAll('.mobile_vapt_info');
-
-        mobile_vapt_cards.forEach((mobile_vapt_card, mobile_vapt_index) => {
-            mobile_vapt_card.addEventListener('click', () => {
-                // Hide all mobile_vapt info boxes
-                mobile_vapt_infoBoxes.forEach((mobile_vapt_infoBox) => {
-                    mobile_vapt_infoBox.style.display = 'none';
-                });
-
-                // Move all mobile_vapt cards to the extreme left
-                mobile_vapt_cards.forEach((c) => {
-                    c.style.transform = 'translateX(-400px)';
-                });
-
-                // Display the mobile_vapt info box for the clicked card
-                const message = ffmpeg_card.getAttribute("data-message")
-                mobile_vapt_infoBoxes[mobile_vapt_index].querySelector("p").textContent = message;
-                mobile_vapt_infoBoxes[mobile_vapt_index].style.transform = 'translateX(0)';
-                mobile_vapt_infoBoxes[mobile_vapt_index].style.display = 'block';
-            });
-        });
-
-        const api_vapt_cards = document.querySelectorAll('.api_vapt_card');
-        const api_vapt_infoBoxes = document.querySelectorAll('.api_vapt_info');
-
-        api_vapt_cards.forEach((api_vapt_card, api_vapt_index) => {
-            api_vapt_card.addEventListener('click', () => {
-                // Hide all api_vapt info boxes
-                api_vapt_infoBoxes.forEach((api_vapt_infoBox) => {
-                    api_vapt_infoBox.style.display = 'none';
-                });
-
-                // Move all api_vapt cards to the extreme left
-                api_vapt_cards.forEach((c) => {
-                    c.style.transform = 'translateX(-400px)';
-                });
-
-                // Display the api_vapt info box for the clicked card
-                const message = ffmpeg_card.getAttribute("data-message")
-                api_vapt_infoBoxes[api_vapt_index].querySelector("p").textContent = message;
-                api_vapt_infoBoxes[api_vapt_index].style.transform = 'translateX(0)';
-                api_vapt_infoBoxes[api_vapt_index].style.display = 'block';
-            });
-        });
-
-        const src_code_cards = document.querySelectorAll('.src_code_card');
-        const src_code_infoBoxes = document.querySelectorAll('.src_code_info');
-
-        src_code_cards.forEach((src_code_card, src_code_index) => {
-            src_code_card.addEventListener('click', () => {
-                // Hide all src_code info boxes
-                src_code_infoBoxes.forEach((src_code_infoBox) => {
-                    src_code_infoBox.style.display = 'none';
-                });
-
-                // Move all src_code cards to the extreme left
-                src_code_cards.forEach((c) => {
-                    c.style.transform = 'translateX(-400px)';
-                });
-
-                // Display the src_code info box for the clicked card
-                const message = ffmpeg_card.getAttribute("data-message")
-                src_code_infoBoxes[src_code_index].querySelector("p").textContent = message;
-                src_code_infoBoxes[src_code_index].style.transform = 'translateX(0)';
-                src_code_infoBoxes[src_code_index].style.display = 'block';
-            });
-        });
-
-    </script>
-    
 </div>
-</body>
+        </div>
+    );    
+}
+}
 
-</html>
+export default  Index;
