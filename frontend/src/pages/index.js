@@ -1,4 +1,16 @@
 import React from "react";
+import logo from "../images/assests/images/logo.png";
+import count from "../images/assests/images/count-on-us.svg";
+
+import sherlock from "../images/assests/images/tools/sherlock.png"
+import ExifTool from "../images/assests/images/tools/ExifTool.png"
+import ghiro from "../images/assests/images/tools/Ghiro.png"
+import jest from "../images/assests/images/tools/Jest.png"
+import mobsf from "../images/assests/images/tools/MOBsf.png"
+import whatweb from "../images/assests/images/tools/WhatWeb.png"
+import sqlmap from "../images/assests/images/tools/SQLmap.png"
+import steghide from "../images/assests/images/tools/Steghide.png"
+import logofooter from "../images/assests/images/logo.png"
 
 
 const Index = () => {
@@ -17,7 +29,7 @@ const Index = () => {
         />
         <header>
           <nav className="navbar" style={{ backgroundColor: "rgba(0,0,0,0.7)" }}>
-            <img src="../assests/logo.png" alt="Logo" />
+            <img src={logo} alt="Logo" />
             <ul>
               <li>
                 <a href="#about" className="about">
@@ -83,7 +95,7 @@ const Index = () => {
               </div>
               <div className="count-right">
                 <img
-                  src="../assests/count-on-us.svg"
+                  src={count}
                   alt="Count on us"
                   width="550px"
                   loading="lazy"
@@ -172,7 +184,7 @@ const Index = () => {
                       <figure className="card" id="card1">
                         {/* Content of the card */}
                         <img
-                          src="../assests/tools/sherlock.png"
+                          src={sherlock}
                           alt="Image 2"
                           className="image"
                         />
@@ -180,7 +192,7 @@ const Index = () => {
                       <figure className="card" id="card2">
                         {/* Content of the card */}
                         <img
-                          src="../assests/tools/Ghiro.png"
+                          src={ghiro}
                           alt="Image 2"
                           className="image"
                         />
@@ -190,7 +202,7 @@ const Index = () => {
                       <figure className="card" id="card3">
                         {/* Content of the card */}
                         <img
-                          src="../assests/tools/ExifTool.png"
+                          src={ExifTool}
                           alt="Image 2"
                           className="image"
                         />
@@ -198,7 +210,7 @@ const Index = () => {
                       <figure className="card" id="card4">
                         {/* Content of the card */}
                         <img
-                          src="../assests/tools/Steghide.png"
+                          src=""
                           alt="Image 2"
                           className="image"
                         />
@@ -224,7 +236,7 @@ const Index = () => {
                         Ghiro
                         <br />
                         <img
-                          src="../assests/tools/Ghiro.png"
+                          src={ghiro}
                           width="300px"
                           height="300px"
                           alt=""
@@ -249,7 +261,7 @@ const Index = () => {
                         StegHide
                         <br />
                         <img
-                          src="../assests/tools/Steghide.png"
+                          src={steghide}
                           width="300px"
                           height="300px"
                           alt=""
@@ -332,7 +344,7 @@ const Index = () => {
                       <figure className="webvapt_image" id="webvapt_image">
                         {/* Content of the FFmpeg card */}
                         <img
-                          src="../assests/tools/WhatWeb.png"
+                          src={whatweb}
                           alt="FFmpeg Image"
                           className="image"
                         />
@@ -340,7 +352,7 @@ const Index = () => {
                       <figure className="webvapt_image" id="webvapt_image">
                         {/* Content of the FFmpeg card */}
                         <img
-                          src="../assests/tools/SQLmap.png"
+                          src={sqlmap}
                           alt="FFmpeg Image"
                           className="image"
                         />
@@ -378,7 +390,7 @@ const Index = () => {
                       <figure className="mobile_vapt_card" id="mobile_vapt_card5">
                         {/* Content of the mobile_vapt card */}
                         <img
-                          src="../assests/tools/MOBsf.png"
+                          src={mobsf}
                           alt="mobile_vapt Image"
                           className="image"
                         />
@@ -386,7 +398,7 @@ const Index = () => {
                       <figure className="mobile_vapt_card" id="mobile_vapt_card5">
                         {/* Content of the mobile_vapt card */}
                         <img
-                          src="../assests/tools/MOBsf.png"
+                          src={mobsf}
                           alt="mobile_vapt Image"
                           className="image"
                         />
@@ -415,7 +427,7 @@ const Index = () => {
                       <figure className="api_vapt_card" id="api_vapt_card5">
                         {/* Content of the api_vapt card */}
                         <img
-                          src="../assests/tools/jest.png"
+                          src={jest}
                           alt="api_vapt Image"
                           className="image"
                         />
@@ -440,7 +452,7 @@ const Index = () => {
                       <figure className="src_code_card" id="src_code_card5">
                         {/* Content of the src_code card */}
                         <img
-                          src="../assests/tools/jest.png"
+                          src={jest}
                           alt="src_code Image"
                           className="image"
                         />
@@ -574,44 +586,44 @@ const Index = () => {
               <div className="icon-container">
                 <a href="#">
                   <img
-                    src="icon1.jpeg.jpeg"
+                    src=""
                     width="100px"
                     height="100px"
                     alt="Icon 1"
                   />
                 </a>
                 <a href="#">
-                  <img src="icon2.jpeg.jpeg" alt="Icon 2" />
+                  <img src="" alt="Icon 2" />
                 </a>
                 <a href="#">
-                  <img src="icon3.jpeg.jpeg" alt="Icon 3" />
+                  <img src="" alt="Icon 3" />
                 </a>
                 <a href="#">
-                  <img src="icon4.jpeg.jpeg" alt="Icon 4" />
+                  <img src="" alt="Icon 4" />
                 </a>
                 <a href="#">
-                  <img src="icon5.jpeg.jpeg" alt="Icon 5" />
+                  <img src="" alt="Icon 5" />
                 </a>
                 =======
                 <div className="footer-content">
                   <div className="footer-logo">
-                    <img src="logofooter.png.png" alt="Logo" className="logo" />
+                    <img src={logofooter} alt="Logo" className="logo" />
                   </div>
                   <div className="icon-container">
                     <a href="#">
-                      <img src="icon1.jpeg.jpeg" alt="Icon 1" />
+                      <img src="" alt="Icon 1" />
                     </a>
                     <a href="#">
-                      <img src="icon2.jpeg.jpeg" alt="Icon 2" />
+                      <img src="" alt="Icon 2" />
                     </a>
                     <a href="#">
-                      <img src="icon3.jpeg.jpeg" alt="Icon 3" />
+                      <img src="" alt="Icon 3" />
                     </a>
                     <a href="#">
-                      <img src="icon4.jpeg.jpeg" alt="Icon 4" />
+                      <img src="" alt="Icon 4" />
                     </a>
                     <a href="#">
-                      <img src="icon5.jpeg.jpeg" alt="Icon 5" />
+                      <img src="" alt="Icon 5" />
                     </a>
                   </div>
                   &gt;&gt;&gt;&gt;&gt;&gt;&gt;
