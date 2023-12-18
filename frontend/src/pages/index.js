@@ -10,6 +10,7 @@ import sherlock from "../images/assests/images/tools/sherlock.png";
 import sqlmap from "../images/assests/images/tools/SQLmap.png";
 import steghide from "../images/assests/images/tools/Steghide.png";
 import whatweb from "../images/assests/images/tools/WhatWeb.png";
+import { Link } from 'react-router-dom'
 
 const Index = () => {
   return (
@@ -247,17 +248,20 @@ const Index = () => {
                   <div className="card-container">
                     <figure className="card" id="card1">
                       {/* Content of the card */}
-                      <img src={sherlock} alt="Image 2" className="image" />
+                      <Link to='../sherloq'>
+                      <img src={sherlock} alt="Image 2" className="image" /></Link>
                     </figure>
                     <figure className="card" id="card2">
                       {/* Content of the card */}
-                      <img src={ghiro} alt="Image 2" className="image" />
+                      <Link to='http://192.168.56.101/'>
+                      <img src={ghiro} alt="Image 2" className="image" /></Link>
                     </figure>
                   </div>
                   <div className="card-container">
                     <figure className="card" id="card3">
                       {/* Content of the card */}
-                      <img src={ExifTool} alt="Image 2" className="image" />
+                      <Link to='../exiftool'>
+                      <img src={ExifTool} alt="Image 2" className="image" /></Link>
                     </figure>
                     <figure className="card" id="card4">
                       {/* Content of the card */}
@@ -335,11 +339,12 @@ const Index = () => {
                   <div className="ffmpeg_card-container">
                     <figure className="ffmpeg_card" id="ffmpeg_card">
                       {/* Content of the FFmpeg card */}
+                      <Link to='../ffmpeg'>
                       <img
                         src="../assests/tools/FFmpeg.png"
                         alt="FFmpeg Image"
                         className="image"
-                      />
+                      /></Link>
                     </figure>
                   </div>
                   <div className="ffmpeg_info-container">
